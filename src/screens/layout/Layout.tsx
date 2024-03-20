@@ -2,12 +2,14 @@ import { Outlet } from "react-router-dom";
 
 import { Grid } from "@mui/material";
 
+import ApplicationBar from "../../components/applicationBar/ApplicationBar.component";
+
 function Layout() {
   return (
     <div className="Layout">
       <Grid container direction="column">
         <Grid item>
-          <>Layout</>
+          <ApplicationBar />
         </Grid>
 
         <Grid item>
