@@ -6,17 +6,15 @@ import ApplicationBar from "../../components/applicationBar/ApplicationBar.compo
 
 function Layout() {
   return (
-    <div className="Layout">
-      <Grid container direction="column">
-        <Grid item>
-          <ApplicationBar />
-        </Grid>
-
-        <Grid item>
-          <Outlet />
-        </Grid>
+    <Grid className="Layout" container direction="column" height="100%">
+      <Grid item>
+        <ApplicationBar />
       </Grid>
-    </div>
+
+      <Grid item flexGrow={1}>
+        <Outlet />
+      </Grid>
+    </Grid>
   );
 }
 

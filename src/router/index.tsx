@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import Layout from "../screens/layout/Layout";
+import Layout from "../screens/layout/Layout.screen";
+import Vote from "../screens/vote/Vote.screen";
 
 export const router = createBrowserRouter([
   {
@@ -13,7 +14,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "vote",
-        element: <>Vote</>,
+        element: <Vote />,
       },
       {
         path: "ranking",
