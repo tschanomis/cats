@@ -5,7 +5,7 @@ import { router } from "./router";
 
 import { fetchCatsData } from "./core/api/api.service";
 
-import { DataCatsResponse } from "./core/api/types/cats/cats.types";
+import { DataCatsResponse } from "./core/types/cats/cats.types";
 
 import "./App.css";
 
@@ -21,7 +21,7 @@ function App() {
 
   useEffect(() => {
     getCatsData();
-  });
+  }, []);
 
   return (
     <div className="App">

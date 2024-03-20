@@ -1,4 +1,4 @@
-import { DataCatsResponse } from "./types/cats/cats.types";
+import { DataCatsResponse } from "../types/cats/cats.types";
 
 export const fetchCatsData = async (): Promise<DataCatsResponse> => {
   try {
