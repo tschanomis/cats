@@ -8,4 +8,9 @@ type DataCatsResponse = {
   images: CatsResponse[];
 };
 
-export type { CatsResponse, DataCatsResponse };
+type CatsContextType = {
+  catsDetails: CatsResponse[];
+  setCatsDetails: (cats: CatsResponse[]) => void;
+};
+
+export type { CatsResponse, DataCatsResponse, CatsContextType };
