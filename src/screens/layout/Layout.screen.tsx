@@ -2,6 +2,8 @@ import { Outlet } from "react-router-dom";
 
 import { Grid } from "@mui/material";
 
+import { CatsProvider } from "../../core/contexts/Cats.context";
+
 import ApplicationBar from "../../components/applicationBar/ApplicationBar.component";
 
 function Layout() {
@@ -12,7 +14,9 @@ function Layout() {
       </Grid>
 
       <Grid item flexGrow={1}>
-        <Outlet />
+        <CatsProvider>
+          <Outlet />
+        </CatsProvider>
       </Grid>
     </Grid>
   );
