@@ -1,6 +1,7 @@
 type CatsResponse = {
   url: string;
   id: string;
+  vote?: number;
 };
 
 type DataCatsResponse = {

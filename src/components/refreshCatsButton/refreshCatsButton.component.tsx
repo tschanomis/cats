@@ -1,9 +1,15 @@
+import { MouseEvent } from "react";
+
 import { Grid, Button } from "@mui/material";
 
-function RefreshCatsButton() {
+interface RefreshCatsButtonProps {
+  action: (event: MouseEvent<HTMLButtonElement>) => void;
+}
+
+function RefreshCatsButton({ action }: RefreshCatsButtonProps) {
   return (
     <Grid className="RefreshCatsButton">
-      <Button variant="contained" onClick={() => console.log("refresh cats")}>
+      <Button variant="contained" onClick={(event) => action(event)}>
         Refresh cats
       </Button>
     </Grid>

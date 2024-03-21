@@ -1,7 +1,7 @@
 import { Grid, Card, CardMedia } from "@mui/material";
+import { CatsResponse } from "../../core/types/cats/cats.types";
 
-function ClickableImages() {
-  const list = ["one", "two"];
+function ClickableImages({ items }: { items: CatsResponse[] }) {
   return (
     <Grid
       className="ClickableImages"
@@ -11,16 +11,16 @@ function ClickableImages() {
       alignContent="center"
       spacing={5}
     >
-      {list.map((item, i) => (
-        <Grid item key={`${item}_${i}`}>
+      {items.map((item: CatsResponse) => (
+        <Grid item key={`${item.id}`}>
           <Card>
             <CardMedia
               component="img"
-              image="http://25.media.tumblr.com/tumblr_m2p6dxhxul1qdvz31o1_500.jpg"
+              image={item.url}
               alt="alt"
               width="300"
               height="300"
-              onClick={() => console.log(i)}
+              onClick={() => console.log(item.id)}
             />
           </Card>
         </Grid>
