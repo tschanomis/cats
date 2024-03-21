@@ -28,13 +28,7 @@ function Vote() {
   }, [catsDetails, refreshCats]);
 
   return (
-    <Grid
-      className="Vote"
-      container
-      justifyContent="center"
-      alignContent="space-evenly"
-      height="100%"
-    >
+    <Grid className="Vote" container justifyContent="center" spacing={5}>
       <ClickableImages items={catsList} />
       <RefreshCatsButton action={refreshAction} />
     </Grid>

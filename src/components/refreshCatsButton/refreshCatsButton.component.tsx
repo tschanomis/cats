@@ -8,7 +8,7 @@ interface RefreshCatsButtonProps {
 
 function RefreshCatsButton({ action }: RefreshCatsButtonProps) {
   return (
-    <Grid className="RefreshCatsButton">
+    <Grid item className="RefreshCatsButton">
       <Button variant="contained" onClick={(event) => action(event)}>
         Refresh cats
       </Button>
