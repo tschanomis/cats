@@ -4,7 +4,7 @@ import RankingList from "../../components/rankingList/RankingList.component";
 
 function Ranking() {
   return (
-    <Grid className="Ranking" container>
+    <Grid className="Ranking" container justifyContent="center" xs={12}>
       <RankingList />
     </Grid>
   );
