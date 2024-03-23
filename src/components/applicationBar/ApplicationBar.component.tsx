@@ -51,7 +51,7 @@ function ApplicationBar() {
               textDecoration: "none",
             }}
           >
-            LOGO
+            CATMASH
           </Typography>
 
           {/* Mobile Menu */}
