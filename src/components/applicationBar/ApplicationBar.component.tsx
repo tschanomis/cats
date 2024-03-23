@@ -85,7 +85,7 @@ function ApplicationBar() {
               }}
             >
               {screens.map((screen) => (
-                <Link to={screen.path}>
+                <Link to={screen.path} key={screen.title}>
                   <MenuItem key={screen.title} onClick={handleCloseNavMenu}>
                     <Typography textAlign="center">{screen.title}</Typography>
                   </MenuItem>
@@ -116,11 +116,8 @@ function ApplicationBar() {
           {/* Desktop Menu */}
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {screens.map((screen) => (
-              <Link to={screen.path}>
-                <Button
-                  key={screen.title}
-                  sx={{ my: 2, color: "white", display: "block" }}
-                >
+              <Link to={screen.path} key={screen.title}>
+                <Button sx={{ my: 2, color: "white", display: "block" }}>
                   {screen.title}
                 </Button>
               </Link>
