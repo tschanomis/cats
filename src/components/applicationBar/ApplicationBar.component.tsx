@@ -32,7 +32,7 @@ function ApplicationBar() {
   const handleCloseNavMenu = () => setAnchorElNav(null);
 
   return (
-    <AppBar className="ApplicationBar" position="sticky">
+    <AppBar className="ApplicationBar" position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* Desktop Logo */}

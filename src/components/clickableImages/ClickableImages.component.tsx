@@ -31,9 +31,12 @@ function ClickableImages({ items }: { items: CatsResponse[] }) {
             <CardMedia
               component="img"
               image={item.url}
-              alt="alt"
-              width="300"
-              height="300"
+              alt={item.url}
+              sx={{
+                height: { xs: "250px", md: "500px" },
+                objectFit: "cover",
+                aspectRatio: "1 / 1",
+              }}
               onClick={() => voteCat(item.id)}
             />
           </Card>
