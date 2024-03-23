@@ -9,7 +9,7 @@ import ApplicationBar from "../../components/applicationBar/ApplicationBar.compo
 function Layout() {
   return (
     <Grid className="Layout" container height="100%">
-      <Grid item xs={12}>
+      <Grid item xs={12} marginBottom={10}>
         <ApplicationBar />
       </Grid>
 
