@@ -26,7 +26,7 @@ function NoVotesPaper({ catsDetails }: { catsDetails: CatsResponse[] }) {
       </Grid>
       <Grid item>
         <ImageList
-          sx={{ width: 500, height: 450 }}
+          sx={{ width: { xs: 300, md: 500 }, height: { xs: 350, md: 500 } }}
           variant="quilted"
           cols={4}
           rowHeight={120}
