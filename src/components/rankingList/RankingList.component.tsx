@@ -30,9 +30,10 @@ function RankingList() {
           <Paper elevation={6}>
             <Grid
               container
-              justifyContent="space-between"
+              justifyContent={{ xs: "center", md: "space-between" }}
               alignItems="center"
               p={5}
+              spacing={2}
             >
               <Grid item>
                 <Avatar
