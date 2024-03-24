@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import { Grid, Typography, Avatar, Button } from "@mui/material";
 
-import { findMostVotedCat } from "../../core/helpers/findMostVotedCat.helpers";
+import { findMostVotedCat } from "../../core/helpers/findMostVotedCat/findMostVotedCat.helpers";
 
 import { CatsResponse } from "../../core/types/cats/cats.types";
 

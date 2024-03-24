@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 
 import CatsContext from "../../core/contexts/Cats.context";
 
-import { generateDistinctNumbers } from "../../core/helpers/generateDistinctNumbers.helpers";
+import { generateDistinctNumbers } from "../../core/helpers/generateDistinctNumbers/generateDistinctNumbers.helpers";
 
 import { Grid } from "@mui/material";
 

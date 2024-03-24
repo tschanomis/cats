@@ -2,7 +2,7 @@ import { useContext } from "react";
 
 import CatsContext from "../../core/contexts/Cats.context";
 
-import { sortedVotedCats } from "../../core/helpers/sortedVotedCats.helper";
+import { sortedVotedCats } from "../../core/helpers/sortedVotedCats/sortedVotedCats.helper";
 
 import { Avatar, Grid, Paper } from "@mui/material";
 
