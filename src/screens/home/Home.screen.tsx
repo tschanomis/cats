@@ -10,7 +10,6 @@ import HasVotesPaper from "../../components/hasVotePaper/hasVotePaper.component"
 function Home() {
   const { catsDetails } = useContext(CatsContext);
   const hasVote: boolean = catsDetails.some((cat) => cat.vote);
-
   return (
     <Grid className="Home" container justifyContent="center">
       <Grid item>

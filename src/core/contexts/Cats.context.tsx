@@ -1,5 +1,7 @@
 import { createContext, useState, useEffect, ReactNode } from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import { fetchCatsData } from "../../core/api/api.service";
 
 import {
@@ -15,6 +17,7 @@ const CatsContext = createContext<CatsContextType>({
 
 export const CatsProvider = ({ children }: { children: ReactNode }) => {
   const [catsDetails, setCatsDetails] = useState<CatsResponse[]>([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const getCatsData = async () => {
@@ -23,10 +26,11 @@ export const CatsProvider = ({ children }: { children: ReactNode }) => {
         setCatsDetails(dataCatsResponse.images);
       } catch (error) {
         console.error(error);
+        navigate("/error");
       }
     };
     getCatsData();
-  }, []);
+  }, [navigate]);
 
   return (
     <CatsContext.Provider value={{ catsDetails, setCatsDetails }}>
