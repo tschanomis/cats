@@ -17,7 +17,7 @@ function NoVotesPaper({ catsDetails }: { catsDetails: CatsResponse[] }) {
       container
       direction="column"
       alignItems="center"
-      p={5}
+      p={4}
     >
       <Grid item>
         <Typography variant="h3" textAlign="center">
@@ -39,7 +39,12 @@ function NoVotesPaper({ catsDetails }: { catsDetails: CatsResponse[] }) {
         </ImageList>
       </Grid>
       <Grid item>
-        <Button component={Link} to="/vote" variant="contained">
+        <Button
+          sx={{ textAlign: "center" }}
+          component={Link}
+          to="/vote"
+          variant="contained"
+        >
           vote for these adorable kittens
         </Button>
       </Grid>
