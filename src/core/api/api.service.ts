@@ -1,6 +1,6 @@
 import { DataCatsResponse } from "../types/cats/cats.types";
 
-const apiUrl = import.meta.env.VITE_API_URL;
+const apiUrl: string = import.meta.env.VITE_API_URL;
 
 export const fetchCatsData = async (): Promise<DataCatsResponse> => {
   try {

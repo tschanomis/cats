@@ -7,7 +7,7 @@ import { generateDistinctNumbers } from "../../core/helpers/generateDistinctNumb
 import { Grid } from "@mui/material";
 
 import ClickableImages from "../../components/clickableImages/ClickableImages.component";
-import RefreshCatsButton from "../../components/refreshCatsButton/refreshCatsButton.component";
+import RefreshCatsButton from "../../components/refreshCatsButton/RefreshCatsButton.component";
 
 import { CatsResponse } from "../../core/types/cats/cats.types";
 

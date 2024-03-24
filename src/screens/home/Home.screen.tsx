@@ -4,8 +4,8 @@ import CatsContext from "../../core/contexts/Cats.context";
 
 import { Grid, Paper } from "@mui/material";
 
-import NoVotesPaper from "../../components/noVotesPaper/noVotesPaper.component";
-import HasVotesPaper from "../../components/hasVotePaper/hasVotePaper.component";
+import NoVotesPaper from "../../components/noVotesPaper/NoVotesPaper.component";
+import HasVotesPaper from "../../components/hasVotePaper/HasVotePaper.component";
 
 function Home() {
   const { catsDetails } = useContext(CatsContext);

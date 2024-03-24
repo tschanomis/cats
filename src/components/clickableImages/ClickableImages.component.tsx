@@ -9,7 +9,7 @@ import { CatsResponse } from "../../core/types/cats/cats.types";
 function ClickableImages({ items }: { items: CatsResponse[] }) {
   const { catsDetails, setCatsDetails } = useContext(CatsContext);
 
-  const voteCat = (id: string) => {
+  const voteCat = (id: string): void => {
     const updateCatsDetails = catsDetails.map((cat) =>
       cat.id === id ? { ...cat, vote: (cat.vote ?? 0) + 1 } : cat
     );
